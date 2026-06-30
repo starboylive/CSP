@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI-Powered Community Help Chatbot</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="index.html">Community Help Hub</a>
+      <nav class="nav-links">
+        <a class="active" href="index.html">Home</a>
+        <a href="scholarships.html">Scholarships</a>
+        <a href="schemes.html">Schemes</a>
+        <a href="health-camps.html">Health Camps</a>
+        <a href="emergencies.html">Emergency Contacts</a>
+      </nav>
+    </header>
+
+    <main class="page">
+      <section class="hero">
+        <div>
+          <p class="eyebrow">AI-powered support</p>
+          <h1>Get trusted community help in one place.</h1>
+          <p class="hero-copy">
+            Ask the chatbot about scholarships, government welfare programs, local health camps, and urgent emergency contacts.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#chatbot">Open chatbot</a>
+            <a class="btn btn-secondary" href="scholarships.html">Explore services</a>
+          </div>
+        </div>
+        <div class="hero-panel">
+          <h3>What you can ask</h3>
+          <ul>
+            <li>Scholarship deadlines and eligibility</li>
+            <li>Government aid programs near me</li>
+            <li>Upcoming health camps and clinics</li>
+            <li>Emergency help and contact numbers</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="feature-grid">
+        <article class="feature-card">
+          <h3>Scholarships</h3>
+          <p>Find academic support, fee-waiver programs, and students’ financial aid information.</p>
+          <a href="scholarships.html">View scholarships</a>
+        </article>
+        <article class="feature-card">
+          <h3>Government Schemes</h3>
+          <p>Learn about pension, housing, food, and welfare initiatives available in your area.</p>
+          <a href="schemes.html">View schemes</a>
+        </article>
+        <article class="feature-card">
+          <h3>Health Camps</h3>
+          <p>Discover free medical checkups, vaccination drives, and community wellness events.</p>
+          <a href="health-camps.html">View camps</a>
+        </article>
+        <article class="feature-card">
+          <h3>Emergency Contacts</h3>
+          <p>Access essential helplines and urgent support channels for immediate assistance.</p>
+          <a href="emergencies.html">Open contacts</a>
+        </article>
+      </section>
+
+      <section id="chatbot" class="chat-card" aria-label="Community help chatbot">
+        <div class="chat-header">
+          <div>
+            <h3>Community Help Assistant</h3>
+            <p>Online now • Friendly and reliable</p>
+          </div>
+          <span class="status-pill">● Active</span>
+        </div>
+
+        <div id="chatMessages" class="chat-messages" aria-live="polite"></div>
+
+        <div class="quick-actions">
+          <button class="chip" data-prompt="Show me nearby scholarship options">Scholarships</button>
+          <button class="chip" data-prompt="What government schemes are available?">Schemes</button>
+          <button class="chip" data-prompt="Where are the nearest health camps?">Health camps</button>
+          <button class="chip" data-prompt="I need emergency support">Emergency help</button>
+        </div>
+
+        <form id="chatForm" class="chat-form">
+          <input id="userInput" type="text" placeholder="Ask about help, resources, or support..." autocomplete="off" />
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
